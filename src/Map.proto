@@ -1,0 +1,32 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+message ServerChunkMessage {
+  sint32 x = 1;
+  sint32 z = 2;
+  sint32 y = 3;
+  
+  bytes chunk = 4;
+  bytes meta = 5;
+  bytes chunkData = 6;
+}
+
+message ServerUpdateBlockMessage {
+  sint32 x = 1;
+  sint32 y = 2;
+  sint32 z = 3;
+  
+  uint32 id = 4;
+  uint32 meta = 5;
+  bytes data = 6;
+}
+
+message ClientRemoveBlockMessage {
+  sint32 x = 1;
+  sint32 y = 2;
+  sint32 z = 3;
+}
+
+message ServerUpdateBlockBatchMessage {
+  repeated ServerUpdateBlockMessage records = 1;
+}

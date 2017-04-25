@@ -1,0 +1,12 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+message ClientChatMessage {
+  string content = 1;
+}
+
+message ServerChatMessage {
+  string username = 1;
+
+  string content = 2;
+}

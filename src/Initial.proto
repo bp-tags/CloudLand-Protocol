@@ -1,0 +1,24 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+message ServerJoinGameMessage {
+  string uuid = 1;
+  string username = 2;
+  float x = 3;
+  float y = 4;
+  float z = 5;
+  uint32 gameMode = 6;
+  uint32 worldId = 7;
+}
+
+message ServerUpdateEnvironmentMessage {
+  enum EnviromentType {
+    TIME = 0;
+  }
+  EnviromentType type = 1;
+  int32 value = 2;
+}
+
+message ServerDisconnectMessage {
+  string reason = 1;
+}

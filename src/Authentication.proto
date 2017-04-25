@@ -1,0 +1,23 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+/**
+ * Use the userId and token aquired by the launcher to authenticate. 
+ */
+message ClientAuthenticateMessage {
+  int64 userId = 1;
+  string token = 2;
+}
+
+/**
+ * The authentication result, if SUCCESS, client may proceed the login procedure. 
+ */
+message ServerAuthenticateResultMessage {
+  enum LoginResult {
+    SUCCESS = 0;
+    FAILED_INVALID_TOKEN = 1;
+    FAILED_TOKEN_TIMED_OUT = 2;
+  }
+  
+  LoginResult result = 1;
+}

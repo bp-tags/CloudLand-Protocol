@@ -1,0 +1,29 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+message SerializedMetadata {
+  message MetadataEntry {
+    enum DataType {
+      INT32 = 0;
+      INT64 = 1;
+      FLOAT = 2;
+      DOUBLE = 3;
+      BOOLEAN = 4;
+      STRING = 5;
+      BYTES = 6;
+      META = 7;
+    }
+    DataType type = 1;
+    oneof value {
+      int32 int32Value= 2;
+      int64 int64Value = 3;
+      float floatValue = 4;
+      double doubleValue = 5;
+      bool booleanValue = 6;
+      string stringValue = 7;
+      bytes bytesValue= 8;
+      SerializedMetadata metaValue = 9;
+    }
+  }
+  map<uint32, MetadataEntry> entries = 1;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+/**
+ * The first message that client should send. 
+ */
+message ClientHandshakeMessage {
+  uint32 clientVersion = 1;
+  uint32 renderDistance = 2;
+}
+
+/**
+ * Server's reply to {ClientHandshakeMessage}. 
+ */
+message ServerHandshakeMessage {
+  bool success = 1;
+  /**
+   * Server status
+   */
+  enum ServerStatus {
+    NORMAL = 0;
+    MAINTAINANCE = 1;
+    ERROR = 2;
+  }
+  ServerStatus status = 2;
+  string message = 3;
+}

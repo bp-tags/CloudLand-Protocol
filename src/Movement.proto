@@ -1,0 +1,60 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+/**
+ * Same as the definition in the client
+ */
+enum Direction {
+  DIRECTION_NORTH = 0;
+  DIRECTION_EAST = 1;
+  DIRECTION_SOUTH = 2;
+  DIRECTION_WEST = 3;
+  DIRECTION_UP = 4;
+  DIRECTION_DOWN = 5;
+}
+
+message ClientMovementMessage {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+  
+  float yaw = 4;
+  float pitch = 5;
+}
+
+message ServerUpdatePlayerPositionMessage {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+  
+  float yaw = 4;
+  float pitch = 5;
+}
+
+message ClientActionMessage {
+  enum ActionType {
+    START_BREAK = 0;
+    CANCEL_BREAK = 1;
+    START_SPRINTING = 2;
+    END_SPRINTING = 3;
+    STOP_SLEEPING = 4;
+  }
+  
+  ActionType action = 1;
+  
+  // Only valid when ActionType == 1 or 2
+  int32 blockX = 2;
+  int32 blockY = 3;
+  int32 blockZ = 4;
+  uint32 face = 5;
+}
+
+message ClientUseItemMessage {
+  uint32 hotbarIndex = 1;
+  
+  uint32 direction = 2;
+  
+  int32 blockX = 3;
+  int32 blockY = 4;
+  int32 blockZ = 5;
+}

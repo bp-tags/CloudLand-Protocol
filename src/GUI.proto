@@ -1,0 +1,88 @@
+syntax = "proto3";
+package org.dragonet.cloudland.net.protocol;
+
+import "Metadata.proto";
+import "Inventory.proto";
+
+enum GUIElementType {
+  TEXT = 0;
+  BUTTON = 1;
+  SUBMIT = 2;
+  LINE_INPUT = 3;
+  AREA_INPUT = 4;
+  ITEM_SLOT = 5;
+  INVENTORY = 6;
+}
+
+message GUIElement {
+  GUIElementType type = 1;
+  
+  int32 x = 2;
+  int32 y = 3;
+  int32 width = 4;
+  int32 height = 5;
+  
+  SerializedMetadata value = 6;
+}
+
+/**
+ * Can also be used to refresh all elements
+ */
+message ServerWindowOpenMessage {
+  uint32 windowId = 1;
+  
+  int32 width = 2;
+  int32 height = 3;
+  
+  string title = 4;
+  
+  repeated GUIElement items = 5;
+}
+
+message ServerWindowCloseMessage {
+  uint32 windowId = 1;
+}
+
+message ClientWindowInteractMessage {
+  enum WindowAction {
+    LEFT_CLICK = 0;
+    RIGHT_CLICK = 1;
+  }
+  uint32 windowId = 1;
+  int32 elementIndex = 2;  // value -1 for clicking the background
+  
+  WindowAction action = 3;
+  
+  int32 x = 4;
+  int32 y = 5;
+  
+  int32 param1 = 6;  // reserved for special cases
+  int32 param2 = 7;
+  
+  string value = 100;
+}
+
+message ClientWindowCloseMessage {
+  uint32 windowId = 1;
+}
+
+message ServerUpdateWindowElementMessage {
+  uint32 windowId = 1;
+  int32 elementIndex = 2;
+  
+  GUIElement newElement = 3;
+}
+
+message ServerUpdateWindowMessage {
+  repeated ServerUpdateWindowElementMessage records = 1;
+}
+
+message ClientWindowSubmitMessage {
+  uint32 windowId = 1;
+
+  map<uint32, SerializedMetadata> entries = 2;
+}
+
+message ServerCursorItemMessage {
+  SerializedItem item = 1;
+}
