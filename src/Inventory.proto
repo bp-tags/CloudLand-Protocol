@@ -5,9 +5,8 @@ import "Metadata.proto";
 
 message SerializedItem {
   int32 id = 1;
-  int32 meta = 2;
-  uint32 count = 3;
-  SerializedMetadata binaryMeta = 4;
+  uint32 count = 2;
+  SerializedMetadata binaryMeta = 3;
 }
 
 message ClientHotbarSelectionMessage {

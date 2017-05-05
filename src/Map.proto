@@ -7,8 +7,7 @@ message ServerChunkMessage {
   sint32 y = 3;
   
   bytes chunk = 4;
-  bytes meta = 5;
-  bytes chunkData = 6;
+  bytes chunkData = 5;
 }
 
 message ServerUpdateBlockMessage {
@@ -17,8 +16,7 @@ message ServerUpdateBlockMessage {
   sint32 z = 3;
   
   uint32 id = 4;
-  uint32 meta = 5;
-  bytes data = 6;
+  bytes data = 5;
 }
 
 message ClientRemoveBlockMessage {
