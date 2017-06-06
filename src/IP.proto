@@ -1,7 +1,0 @@
-syntax = "proto3";
-package org.dragonet.cloudland.net.protocol;
-
-message IPv4EndPoint {
-  string address = 1;
-  uint32 port = 2;
-}
