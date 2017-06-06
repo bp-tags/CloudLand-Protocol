@@ -178,27 +178,27 @@ public final class Entity {
     boolean getEntitySlotsEnabled();
 
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    java.util.List<DataTypes.Vector3F> 
+    java.util.List<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F> 
         getEntitySlotsList();
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    DataTypes.Vector3F getEntitySlots(int index);
+    org.dragonet.cloudland.net.protocol.DataTypes.Vector3F getEntitySlots(int index);
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
     int getEntitySlotsCount();
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    java.util.List<? extends DataTypes.Vector3FOrBuilder> 
+    java.util.List<? extends org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> 
         getEntitySlotsOrBuilderList();
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    DataTypes.Vector3FOrBuilder getEntitySlotsOrBuilder(
+    org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder getEntitySlotsOrBuilder(
         int index);
   }
   /**
@@ -305,11 +305,11 @@ public final class Entity {
             }
             case 410: {
               if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
-                entitySlots_ = new java.util.ArrayList<DataTypes.Vector3F>();
+                entitySlots_ = new java.util.ArrayList<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F>();
                 mutable_bitField0_ |= 0x00000200;
               }
               entitySlots_.add(
-                  input.readMessage(DataTypes.Vector3F.parser(), extensionRegistry));
+                  input.readMessage(org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.parser(), extensionRegistry));
               break;
             }
           }
@@ -444,36 +444,36 @@ public final class Entity {
     }
 
     public static final int ENTITYSLOTS_FIELD_NUMBER = 51;
-    private java.util.List<DataTypes.Vector3F> entitySlots_;
+    private java.util.List<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F> entitySlots_;
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    public java.util.List<DataTypes.Vector3F> getEntitySlotsList() {
+    public java.util.List<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F> getEntitySlotsList() {
       return entitySlots_;
     }
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    public java.util.List<? extends DataTypes.Vector3FOrBuilder> 
+    public java.util.List<? extends org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> 
         getEntitySlotsOrBuilderList() {
       return entitySlots_;
     }
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
     public int getEntitySlotsCount() {
       return entitySlots_.size();
     }
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    public DataTypes.Vector3F getEntitySlots(int index) {
+    public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F getEntitySlots(int index) {
       return entitySlots_.get(index);
     }
     /**
-     * <code>repeated .Vector3F entitySlots = 51;</code>
+     * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
      */
-    public DataTypes.Vector3FOrBuilder getEntitySlotsOrBuilder(
+    public org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder getEntitySlotsOrBuilder(
         int index) {
       return entitySlots_.get(index);
     }
@@ -1326,22 +1326,22 @@ public final class Entity {
         return this;
       }
 
-      private java.util.List<DataTypes.Vector3F> entitySlots_ =
+      private java.util.List<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F> entitySlots_ =
         java.util.Collections.emptyList();
       private void ensureEntitySlotsIsMutable() {
         if (!((bitField0_ & 0x00000200) == 0x00000200)) {
-          entitySlots_ = new java.util.ArrayList<DataTypes.Vector3F>(entitySlots_);
+          entitySlots_ = new java.util.ArrayList<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F>(entitySlots_);
           bitField0_ |= 0x00000200;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          DataTypes.Vector3F, DataTypes.Vector3F.Builder, DataTypes.Vector3FOrBuilder> entitySlotsBuilder_;
+          org.dragonet.cloudland.net.protocol.DataTypes.Vector3F, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder, org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> entitySlotsBuilder_;
 
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public java.util.List<DataTypes.Vector3F> getEntitySlotsList() {
+      public java.util.List<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F> getEntitySlotsList() {
         if (entitySlotsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(entitySlots_);
         } else {
@@ -1349,7 +1349,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public int getEntitySlotsCount() {
         if (entitySlotsBuilder_ == null) {
@@ -1359,9 +1359,9 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public DataTypes.Vector3F getEntitySlots(int index) {
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F getEntitySlots(int index) {
         if (entitySlotsBuilder_ == null) {
           return entitySlots_.get(index);
         } else {
@@ -1369,10 +1369,10 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder setEntitySlots(
-          int index, DataTypes.Vector3F value) {
+          int index, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F value) {
         if (entitySlotsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1386,10 +1386,10 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder setEntitySlots(
-          int index, DataTypes.Vector3F.Builder builderForValue) {
+          int index, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder builderForValue) {
         if (entitySlotsBuilder_ == null) {
           ensureEntitySlotsIsMutable();
           entitySlots_.set(index, builderForValue.build());
@@ -1400,9 +1400,9 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public Builder addEntitySlots(DataTypes.Vector3F value) {
+      public Builder addEntitySlots(org.dragonet.cloudland.net.protocol.DataTypes.Vector3F value) {
         if (entitySlotsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1416,10 +1416,10 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder addEntitySlots(
-          int index, DataTypes.Vector3F value) {
+          int index, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F value) {
         if (entitySlotsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1433,10 +1433,10 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder addEntitySlots(
-          DataTypes.Vector3F.Builder builderForValue) {
+          org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder builderForValue) {
         if (entitySlotsBuilder_ == null) {
           ensureEntitySlotsIsMutable();
           entitySlots_.add(builderForValue.build());
@@ -1447,10 +1447,10 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder addEntitySlots(
-          int index, DataTypes.Vector3F.Builder builderForValue) {
+          int index, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder builderForValue) {
         if (entitySlotsBuilder_ == null) {
           ensureEntitySlotsIsMutable();
           entitySlots_.add(index, builderForValue.build());
@@ -1461,10 +1461,10 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder addAllEntitySlots(
-          java.lang.Iterable<? extends DataTypes.Vector3F> values) {
+          java.lang.Iterable<? extends org.dragonet.cloudland.net.protocol.DataTypes.Vector3F> values) {
         if (entitySlotsBuilder_ == null) {
           ensureEntitySlotsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1476,7 +1476,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder clearEntitySlots() {
         if (entitySlotsBuilder_ == null) {
@@ -1489,7 +1489,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
       public Builder removeEntitySlots(int index) {
         if (entitySlotsBuilder_ == null) {
@@ -1502,16 +1502,16 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public DataTypes.Vector3F.Builder getEntitySlotsBuilder(
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder getEntitySlotsBuilder(
           int index) {
         return getEntitySlotsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public DataTypes.Vector3FOrBuilder getEntitySlotsOrBuilder(
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder getEntitySlotsOrBuilder(
           int index) {
         if (entitySlotsBuilder_ == null) {
           return entitySlots_.get(index);  } else {
@@ -1519,9 +1519,9 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public java.util.List<? extends DataTypes.Vector3FOrBuilder> 
+      public java.util.List<? extends org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> 
            getEntitySlotsOrBuilderList() {
         if (entitySlotsBuilder_ != null) {
           return entitySlotsBuilder_.getMessageOrBuilderList();
@@ -1530,33 +1530,33 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public DataTypes.Vector3F.Builder addEntitySlotsBuilder() {
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder addEntitySlotsBuilder() {
         return getEntitySlotsFieldBuilder().addBuilder(
-            DataTypes.Vector3F.getDefaultInstance());
+            org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.getDefaultInstance());
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public DataTypes.Vector3F.Builder addEntitySlotsBuilder(
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder addEntitySlotsBuilder(
           int index) {
         return getEntitySlotsFieldBuilder().addBuilder(
-            index, DataTypes.Vector3F.getDefaultInstance());
+            index, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.getDefaultInstance());
       }
       /**
-       * <code>repeated .Vector3F entitySlots = 51;</code>
+       * <code>repeated .org.dragonet.cloudland.net.protocol.Vector3F entitySlots = 51;</code>
        */
-      public java.util.List<DataTypes.Vector3F.Builder> 
+      public java.util.List<org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder> 
            getEntitySlotsBuilderList() {
         return getEntitySlotsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          DataTypes.Vector3F, DataTypes.Vector3F.Builder, DataTypes.Vector3FOrBuilder> 
+          org.dragonet.cloudland.net.protocol.DataTypes.Vector3F, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder, org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> 
           getEntitySlotsFieldBuilder() {
         if (entitySlotsBuilder_ == null) {
           entitySlotsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              DataTypes.Vector3F, DataTypes.Vector3F.Builder, DataTypes.Vector3FOrBuilder>(
+              org.dragonet.cloudland.net.protocol.DataTypes.Vector3F, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder, org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder>(
                   entitySlots_,
                   ((bitField0_ & 0x00000200) == 0x00000200),
                   getParentForChildren(),
@@ -3583,7 +3583,7 @@ public final class Entity {
      * local position for entering or leaving to passenger, world position for leaving outside. 
      * </pre>
      *
-     * <code>optional .Vector3F position = 10;</code>
+     * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
      */
     boolean hasPosition();
     /**
@@ -3591,17 +3591,17 @@ public final class Entity {
      * local position for entering or leaving to passenger, world position for leaving outside. 
      * </pre>
      *
-     * <code>optional .Vector3F position = 10;</code>
+     * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
      */
-    DataTypes.Vector3F getPosition();
+    org.dragonet.cloudland.net.protocol.DataTypes.Vector3F getPosition();
     /**
      * <pre>
      * local position for entering or leaving to passenger, world position for leaving outside. 
      * </pre>
      *
-     * <code>optional .Vector3F position = 10;</code>
+     * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
      */
-    DataTypes.Vector3FOrBuilder getPositionOrBuilder();
+    org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder getPositionOrBuilder();
   }
   /**
    * <pre>
@@ -3668,11 +3668,11 @@ public final class Entity {
               break;
             }
             case 82: {
-              DataTypes.Vector3F.Builder subBuilder = null;
+              org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder subBuilder = null;
               if (position_ != null) {
                 subBuilder = position_.toBuilder();
               }
-              position_ = input.readMessage(DataTypes.Vector3F.parser(), extensionRegistry);
+              position_ = input.readMessage(org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(position_);
                 position_ = subBuilder.buildPartial();
@@ -3845,13 +3845,13 @@ public final class Entity {
     }
 
     public static final int POSITION_FIELD_NUMBER = 10;
-    private DataTypes.Vector3F position_;
+    private org.dragonet.cloudland.net.protocol.DataTypes.Vector3F position_;
     /**
      * <pre>
      * local position for entering or leaving to passenger, world position for leaving outside. 
      * </pre>
      *
-     * <code>optional .Vector3F position = 10;</code>
+     * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
      */
     public boolean hasPosition() {
       return position_ != null;
@@ -3861,19 +3861,19 @@ public final class Entity {
      * local position for entering or leaving to passenger, world position for leaving outside. 
      * </pre>
      *
-     * <code>optional .Vector3F position = 10;</code>
+     * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
      */
-    public DataTypes.Vector3F getPosition() {
-      return position_ == null ? DataTypes.Vector3F.getDefaultInstance() : position_;
+    public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F getPosition() {
+      return position_ == null ? org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.getDefaultInstance() : position_;
     }
     /**
      * <pre>
      * local position for entering or leaving to passenger, world position for leaving outside. 
      * </pre>
      *
-     * <code>optional .Vector3F position = 10;</code>
+     * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
      */
-    public DataTypes.Vector3FOrBuilder getPositionOrBuilder() {
+    public org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder getPositionOrBuilder() {
       return getPosition();
     }
 
@@ -4313,15 +4313,15 @@ public final class Entity {
         return this;
       }
 
-      private DataTypes.Vector3F position_ = null;
+      private org.dragonet.cloudland.net.protocol.DataTypes.Vector3F position_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          DataTypes.Vector3F, DataTypes.Vector3F.Builder, DataTypes.Vector3FOrBuilder> positionBuilder_;
+          org.dragonet.cloudland.net.protocol.DataTypes.Vector3F, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder, org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> positionBuilder_;
       /**
        * <pre>
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
       public boolean hasPosition() {
         return positionBuilder_ != null || position_ != null;
@@ -4331,11 +4331,11 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
-      public DataTypes.Vector3F getPosition() {
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F getPosition() {
         if (positionBuilder_ == null) {
-          return position_ == null ? DataTypes.Vector3F.getDefaultInstance() : position_;
+          return position_ == null ? org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.getDefaultInstance() : position_;
         } else {
           return positionBuilder_.getMessage();
         }
@@ -4345,9 +4345,9 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
-      public Builder setPosition(DataTypes.Vector3F value) {
+      public Builder setPosition(org.dragonet.cloudland.net.protocol.DataTypes.Vector3F value) {
         if (positionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4365,10 +4365,10 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
       public Builder setPosition(
-          DataTypes.Vector3F.Builder builderForValue) {
+          org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder builderForValue) {
         if (positionBuilder_ == null) {
           position_ = builderForValue.build();
           onChanged();
@@ -4383,13 +4383,13 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
-      public Builder mergePosition(DataTypes.Vector3F value) {
+      public Builder mergePosition(org.dragonet.cloudland.net.protocol.DataTypes.Vector3F value) {
         if (positionBuilder_ == null) {
           if (position_ != null) {
             position_ =
-              DataTypes.Vector3F.newBuilder(position_).mergeFrom(value).buildPartial();
+              org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.newBuilder(position_).mergeFrom(value).buildPartial();
           } else {
             position_ = value;
           }
@@ -4405,7 +4405,7 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
       public Builder clearPosition() {
         if (positionBuilder_ == null) {
@@ -4423,9 +4423,9 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
-      public DataTypes.Vector3F.Builder getPositionBuilder() {
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder getPositionBuilder() {
         
         onChanged();
         return getPositionFieldBuilder().getBuilder();
@@ -4435,14 +4435,14 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
-      public DataTypes.Vector3FOrBuilder getPositionOrBuilder() {
+      public org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder getPositionOrBuilder() {
         if (positionBuilder_ != null) {
           return positionBuilder_.getMessageOrBuilder();
         } else {
           return position_ == null ?
-              DataTypes.Vector3F.getDefaultInstance() : position_;
+              org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.getDefaultInstance() : position_;
         }
       }
       /**
@@ -4450,14 +4450,14 @@ public final class Entity {
        * local position for entering or leaving to passenger, world position for leaving outside. 
        * </pre>
        *
-       * <code>optional .Vector3F position = 10;</code>
+       * <code>optional .org.dragonet.cloudland.net.protocol.Vector3F position = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          DataTypes.Vector3F, DataTypes.Vector3F.Builder, DataTypes.Vector3FOrBuilder> 
+          org.dragonet.cloudland.net.protocol.DataTypes.Vector3F, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder, org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder> 
           getPositionFieldBuilder() {
         if (positionBuilder_ == null) {
           positionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              DataTypes.Vector3F, DataTypes.Vector3F.Builder, DataTypes.Vector3FOrBuilder>(
+              org.dragonet.cloudland.net.protocol.DataTypes.Vector3F, org.dragonet.cloudland.net.protocol.DataTypes.Vector3F.Builder, org.dragonet.cloudland.net.protocol.DataTypes.Vector3FOrBuilder>(
                   getPosition(),
                   getParentForChildren(),
                   isClean());
@@ -5648,35 +5648,37 @@ public final class Entity {
     java.lang.String[] descriptorData = {
       "\n\014Entity.proto\022#org.dragonet.cloudland.n" +
       "et.protocol\032\016Metadata.proto\032\017DataTypes.p" +
-      "roto\"\257\002\n\026ServerAddEntityMessage\022\020\n\010entit" +
+      "roto\"\323\002\n\026ServerAddEntityMessage\022\020\n\010entit" +
       "yId\030\001 \001(\004\022C\n\nentityType\030\002 \001(\0162/.org.drag" +
       "onet.cloudland.net.protocol.EntityType\022\t" +
       "\n\001x\030\003 \001(\001\022\t\n\001y\030\004 \001(\001\022\t\n\001z\030\005 \001(\001\022\013\n\003yaw\030\006" +
       " \001(\002\022\r\n\005pitch\030\007 \001(\002\022E\n\004meta\030\010 \001(\01327.org." +
       "dragonet.cloudland.net.protocol.Serializ" +
-      "edMetadata\022\032\n\022entitySlotsEnabled\0302 \001(\010\022\036" +
-      "\n\013entitySlots\0303 \003(\0132\t.Vector3F\"\357\001\n\031Serve",
-      "rEntityUpdateMessage\022\020\n\010entityId\030\001 \001(\004\022\024" +
-      "\n\014flagPosition\030\002 \001(\010\022\t\n\001x\030\003 \001(\001\022\t\n\001y\030\004 \001" +
-      "(\001\022\t\n\001z\030\005 \001(\001\022\024\n\014flagRotation\030\006 \001(\010\022\013\n\003y" +
-      "aw\030\007 \001(\002\022\r\n\005pitch\030\010 \001(\002\022\020\n\010flagMeta\030\t \001(" +
-      "\010\022E\n\004meta\030\n \001(\01327.org.dragonet.cloudland" +
-      ".net.protocol.SerializedMetadata\"-\n\031Serv" +
-      "erRemoveEntityMessage\022\020\n\010entityId\030\001 \001(\004\"" +
-      "\034\n\032ServerClearEntitiesMessage\"\262\002\n&Server" +
-      "EntityHierarchicalControlMessage\022\020\n\010enti" +
-      "tyId\030\001 \001(\004\022\026\n\016targetEntityId\030\002 \001(\004\022n\n\006ac",
-      "tion\030\003 \001(\0162^.org.dragonet.cloudland.net." +
-      "protocol.ServerEntityHierarchicalControl" +
-      "Message.HierarchicalAction\022\033\n\010position\030\n" +
-      " \001(\0132\t.Vector3F\"Q\n\022HierarchicalAction\022\t\n" +
-      "\005ENTER\020\000\022\030\n\024LEAVING_TO_PASSENGER\020\001\022\026\n\022LE" +
-      "AVING_TO_OUTSIDE\020\002\"]\n!ServerEntityBindin" +
-      "gControlMessage\022\020\n\010entityId\030\001 \001(\004\022\026\n\016tar" +
-      "getEntityId\030\002 \001(\004\022\016\n\006slotId\030\003 \001(\005\"J\n\033Cli" +
-      "entEntityInteractMessage\022\026\n\016targetEntity" +
-      "Id\030\001 \001(\004\022\023\n\013mouseButton\030\002 \001(\007*\"\n\nEntityT",
-      "ype\022\n\n\006PLAYER\020\000\022\010\n\004ITEM\020\001b\006proto3"
+      "edMetadata\022\032\n\022entitySlotsEnabled\0302 \001(\010\022B" +
+      "\n\013entitySlots\0303 \003(\0132-.org.dragonet.cloud",
+      "land.net.protocol.Vector3F\"\357\001\n\031ServerEnt" +
+      "ityUpdateMessage\022\020\n\010entityId\030\001 \001(\004\022\024\n\014fl" +
+      "agPosition\030\002 \001(\010\022\t\n\001x\030\003 \001(\001\022\t\n\001y\030\004 \001(\001\022\t" +
+      "\n\001z\030\005 \001(\001\022\024\n\014flagRotation\030\006 \001(\010\022\013\n\003yaw\030\007" +
+      " \001(\002\022\r\n\005pitch\030\010 \001(\002\022\020\n\010flagMeta\030\t \001(\010\022E\n" +
+      "\004meta\030\n \001(\01327.org.dragonet.cloudland.net" +
+      ".protocol.SerializedMetadata\"-\n\031ServerRe" +
+      "moveEntityMessage\022\020\n\010entityId\030\001 \001(\004\"\034\n\032S" +
+      "erverClearEntitiesMessage\"\326\002\n&ServerEnti" +
+      "tyHierarchicalControlMessage\022\020\n\010entityId",
+      "\030\001 \001(\004\022\026\n\016targetEntityId\030\002 \001(\004\022n\n\006action" +
+      "\030\003 \001(\0162^.org.dragonet.cloudland.net.prot" +
+      "ocol.ServerEntityHierarchicalControlMess" +
+      "age.HierarchicalAction\022?\n\010position\030\n \001(\013" +
+      "2-.org.dragonet.cloudland.net.protocol.V" +
+      "ector3F\"Q\n\022HierarchicalAction\022\t\n\005ENTER\020\000" +
+      "\022\030\n\024LEAVING_TO_PASSENGER\020\001\022\026\n\022LEAVING_TO" +
+      "_OUTSIDE\020\002\"]\n!ServerEntityBindingControl" +
+      "Message\022\020\n\010entityId\030\001 \001(\004\022\026\n\016targetEntit" +
+      "yId\030\002 \001(\004\022\016\n\006slotId\030\003 \001(\005\"J\n\033ClientEntit",
+      "yInteractMessage\022\026\n\016targetEntityId\030\001 \001(\004" +
+      "\022\023\n\013mouseButton\030\002 \001(\007*\"\n\nEntityType\022\n\n\006P" +
+      "LAYER\020\000\022\010\n\004ITEM\020\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5690,7 +5692,7 @@ public final class Entity {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           org.dragonet.cloudland.net.protocol.Metadata.getDescriptor(),
-          .DataTypes.getDescriptor(),
+          org.dragonet.cloudland.net.protocol.DataTypes.getDescriptor(),
         }, assigner);
     internal_static_org_dragonet_cloudland_net_protocol_ServerAddEntityMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -5735,7 +5737,7 @@ public final class Entity {
         internal_static_org_dragonet_cloudland_net_protocol_ClientEntityInteractMessage_descriptor,
         new java.lang.String[] { "TargetEntityId", "MouseButton", });
     org.dragonet.cloudland.net.protocol.Metadata.getDescriptor();
-    DataTypes.getDescriptor();
+    org.dragonet.cloudland.net.protocol.DataTypes.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -23,35 +23,36 @@ namespace Org.Dragonet.Cloudland.Net.Protocol {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgxFbnRpdHkucHJvdG8SI29yZy5kcmFnb25ldC5jbG91ZGxhbmQubmV0LnBy",
-            "b3RvY29sGg5NZXRhZGF0YS5wcm90bxoPRGF0YVR5cGVzLnByb3RvIq8CChZT",
+            "b3RvY29sGg5NZXRhZGF0YS5wcm90bxoPRGF0YVR5cGVzLnByb3RvItMCChZT",
             "ZXJ2ZXJBZGRFbnRpdHlNZXNzYWdlEhAKCGVudGl0eUlkGAEgASgEEkMKCmVu",
             "dGl0eVR5cGUYAiABKA4yLy5vcmcuZHJhZ29uZXQuY2xvdWRsYW5kLm5ldC5w",
             "cm90b2NvbC5FbnRpdHlUeXBlEgkKAXgYAyABKAESCQoBeRgEIAEoARIJCgF6",
             "GAUgASgBEgsKA3lhdxgGIAEoAhINCgVwaXRjaBgHIAEoAhJFCgRtZXRhGAgg",
             "ASgLMjcub3JnLmRyYWdvbmV0LmNsb3VkbGFuZC5uZXQucHJvdG9jb2wuU2Vy",
-            "aWFsaXplZE1ldGFkYXRhEhoKEmVudGl0eVNsb3RzRW5hYmxlZBgyIAEoCBIe",
-            "CgtlbnRpdHlTbG90cxgzIAMoCzIJLlZlY3RvcjNGIu8BChlTZXJ2ZXJFbnRp",
-            "dHlVcGRhdGVNZXNzYWdlEhAKCGVudGl0eUlkGAEgASgEEhQKDGZsYWdQb3Np",
-            "dGlvbhgCIAEoCBIJCgF4GAMgASgBEgkKAXkYBCABKAESCQoBehgFIAEoARIU",
-            "CgxmbGFnUm90YXRpb24YBiABKAgSCwoDeWF3GAcgASgCEg0KBXBpdGNoGAgg",
-            "ASgCEhAKCGZsYWdNZXRhGAkgASgIEkUKBG1ldGEYCiABKAsyNy5vcmcuZHJh",
-            "Z29uZXQuY2xvdWRsYW5kLm5ldC5wcm90b2NvbC5TZXJpYWxpemVkTWV0YWRh",
-            "dGEiLQoZU2VydmVyUmVtb3ZlRW50aXR5TWVzc2FnZRIQCghlbnRpdHlJZBgB",
-            "IAEoBCIcChpTZXJ2ZXJDbGVhckVudGl0aWVzTWVzc2FnZSKyAgomU2VydmVy",
-            "RW50aXR5SGllcmFyY2hpY2FsQ29udHJvbE1lc3NhZ2USEAoIZW50aXR5SWQY",
-            "ASABKAQSFgoOdGFyZ2V0RW50aXR5SWQYAiABKAQSbgoGYWN0aW9uGAMgASgO",
-            "Ml4ub3JnLmRyYWdvbmV0LmNsb3VkbGFuZC5uZXQucHJvdG9jb2wuU2VydmVy",
-            "RW50aXR5SGllcmFyY2hpY2FsQ29udHJvbE1lc3NhZ2UuSGllcmFyY2hpY2Fs",
-            "QWN0aW9uEhsKCHBvc2l0aW9uGAogASgLMgkuVmVjdG9yM0YiUQoSSGllcmFy",
-            "Y2hpY2FsQWN0aW9uEgkKBUVOVEVSEAASGAoUTEVBVklOR19UT19QQVNTRU5H",
-            "RVIQARIWChJMRUFWSU5HX1RPX09VVFNJREUQAiJdCiFTZXJ2ZXJFbnRpdHlC",
-            "aW5kaW5nQ29udHJvbE1lc3NhZ2USEAoIZW50aXR5SWQYASABKAQSFgoOdGFy",
-            "Z2V0RW50aXR5SWQYAiABKAQSDgoGc2xvdElkGAMgASgFIkoKG0NsaWVudEVu",
-            "dGl0eUludGVyYWN0TWVzc2FnZRIWCg50YXJnZXRFbnRpdHlJZBgBIAEoBBIT",
-            "Cgttb3VzZUJ1dHRvbhgCIAEoByoiCgpFbnRpdHlUeXBlEgoKBlBMQVlFUhAA",
-            "EggKBElURU0QAWIGcHJvdG8z"));
+            "aWFsaXplZE1ldGFkYXRhEhoKEmVudGl0eVNsb3RzRW5hYmxlZBgyIAEoCBJC",
+            "CgtlbnRpdHlTbG90cxgzIAMoCzItLm9yZy5kcmFnb25ldC5jbG91ZGxhbmQu",
+            "bmV0LnByb3RvY29sLlZlY3RvcjNGIu8BChlTZXJ2ZXJFbnRpdHlVcGRhdGVN",
+            "ZXNzYWdlEhAKCGVudGl0eUlkGAEgASgEEhQKDGZsYWdQb3NpdGlvbhgCIAEo",
+            "CBIJCgF4GAMgASgBEgkKAXkYBCABKAESCQoBehgFIAEoARIUCgxmbGFnUm90",
+            "YXRpb24YBiABKAgSCwoDeWF3GAcgASgCEg0KBXBpdGNoGAggASgCEhAKCGZs",
+            "YWdNZXRhGAkgASgIEkUKBG1ldGEYCiABKAsyNy5vcmcuZHJhZ29uZXQuY2xv",
+            "dWRsYW5kLm5ldC5wcm90b2NvbC5TZXJpYWxpemVkTWV0YWRhdGEiLQoZU2Vy",
+            "dmVyUmVtb3ZlRW50aXR5TWVzc2FnZRIQCghlbnRpdHlJZBgBIAEoBCIcChpT",
+            "ZXJ2ZXJDbGVhckVudGl0aWVzTWVzc2FnZSLWAgomU2VydmVyRW50aXR5SGll",
+            "cmFyY2hpY2FsQ29udHJvbE1lc3NhZ2USEAoIZW50aXR5SWQYASABKAQSFgoO",
+            "dGFyZ2V0RW50aXR5SWQYAiABKAQSbgoGYWN0aW9uGAMgASgOMl4ub3JnLmRy",
+            "YWdvbmV0LmNsb3VkbGFuZC5uZXQucHJvdG9jb2wuU2VydmVyRW50aXR5SGll",
+            "cmFyY2hpY2FsQ29udHJvbE1lc3NhZ2UuSGllcmFyY2hpY2FsQWN0aW9uEj8K",
+            "CHBvc2l0aW9uGAogASgLMi0ub3JnLmRyYWdvbmV0LmNsb3VkbGFuZC5uZXQu",
+            "cHJvdG9jb2wuVmVjdG9yM0YiUQoSSGllcmFyY2hpY2FsQWN0aW9uEgkKBUVO",
+            "VEVSEAASGAoUTEVBVklOR19UT19QQVNTRU5HRVIQARIWChJMRUFWSU5HX1RP",
+            "X09VVFNJREUQAiJdCiFTZXJ2ZXJFbnRpdHlCaW5kaW5nQ29udHJvbE1lc3Nh",
+            "Z2USEAoIZW50aXR5SWQYASABKAQSFgoOdGFyZ2V0RW50aXR5SWQYAiABKAQS",
+            "DgoGc2xvdElkGAMgASgFIkoKG0NsaWVudEVudGl0eUludGVyYWN0TWVzc2Fn",
+            "ZRIWCg50YXJnZXRFbnRpdHlJZBgBIAEoBBITCgttb3VzZUJ1dHRvbhgCIAEo",
+            "ByoiCgpFbnRpdHlUeXBlEgoKBlBMQVlFUhAAEggKBElURU0QAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Org.Dragonet.Cloudland.Net.Protocol.MetadataReflection.Descriptor, global::DataTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Org.Dragonet.Cloudland.Net.Protocol.MetadataReflection.Descriptor, global::Org.Dragonet.Cloudland.Net.Protocol.DataTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Org.Dragonet.Cloudland.Net.Protocol.EntityType), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Org.Dragonet.Cloudland.Net.Protocol.ServerAddEntityMessage), global::Org.Dragonet.Cloudland.Net.Protocol.ServerAddEntityMessage.Parser, new[]{ "EntityId", "EntityType", "X", "Y", "Z", "Yaw", "Pitch", "Meta", "EntitySlotsEnabled", "EntitySlots" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Org.Dragonet.Cloudland.Net.Protocol.ServerEntityUpdateMessage), global::Org.Dragonet.Cloudland.Net.Protocol.ServerEntityUpdateMessage.Parser, new[]{ "EntityId", "FlagPosition", "X", "Y", "Z", "FlagRotation", "Yaw", "Pitch", "FlagMeta", "Meta" }, null, null, null),
@@ -219,11 +220,11 @@ namespace Org.Dragonet.Cloudland.Net.Protocol {
 
     /// <summary>Field number for the "entitySlots" field.</summary>
     public const int EntitySlotsFieldNumber = 51;
-    private static readonly pb::FieldCodec<global::Vector3F> _repeated_entitySlots_codec
-        = pb::FieldCodec.ForMessage(410, global::Vector3F.Parser);
-    private readonly pbc::RepeatedField<global::Vector3F> entitySlots_ = new pbc::RepeatedField<global::Vector3F>();
+    private static readonly pb::FieldCodec<global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F> _repeated_entitySlots_codec
+        = pb::FieldCodec.ForMessage(410, global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F.Parser);
+    private readonly pbc::RepeatedField<global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F> entitySlots_ = new pbc::RepeatedField<global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Vector3F> EntitySlots {
+    public pbc::RepeatedField<global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F> EntitySlots {
       get { return entitySlots_; }
     }
 
@@ -1101,12 +1102,12 @@ namespace Org.Dragonet.Cloudland.Net.Protocol {
 
     /// <summary>Field number for the "position" field.</summary>
     public const int PositionFieldNumber = 10;
-    private global::Vector3F position_;
+    private global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F position_;
     /// <summary>
     ///  local position for entering or leaving to passenger, world position for leaving outside. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Vector3F Position {
+    public global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F Position {
       get { return position_; }
       set {
         position_ = value;
@@ -1202,7 +1203,7 @@ namespace Org.Dragonet.Cloudland.Net.Protocol {
       }
       if (other.position_ != null) {
         if (position_ == null) {
-          position_ = new global::Vector3F();
+          position_ = new global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F();
         }
         Position.MergeFrom(other.Position);
       }
@@ -1230,7 +1231,7 @@ namespace Org.Dragonet.Cloudland.Net.Protocol {
           }
           case 82: {
             if (position_ == null) {
-              position_ = new global::Vector3F();
+              position_ = new global::Org.Dragonet.Cloudland.Net.Protocol.Vector3F();
             }
             input.ReadMessage(position_);
             break;
