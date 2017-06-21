@@ -4,14 +4,9 @@ package org.dragonet.cloudland.net.protocol;
 import "Metadata.proto";
 import "DataTypes.proto";
 
-enum EntityType {
-  PLAYER = 0;
-  ITEM = 1;
-}
-
 message ServerAddEntityMessage {
   uint64 entityId = 1;
-  EntityType entityType = 2;
+  fixed32 entityType = 2;
   double x = 3;
   double y = 4;
   double z = 5;
