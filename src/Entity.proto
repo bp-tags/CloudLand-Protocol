@@ -41,30 +41,8 @@ message ServerClearEntitiesMessage {
 }
 
 /*
- * Establish a parent-child relationship between two entities. 
- * Once it's done, we will only use RELATIVE position do describe the
- * child entity. For example, when someone enters a spaceship. 
- */
-message ServerEntityHierarchicalControlMessage {
-  uint64 entityId = 1;
-  uint64 targetEntityId = 2;
-  
-  enum HierarchicalAction {
-    ENTER = 0;
-    LEAVING_TO_PASSENGER = 1;
-    LEAVING_TO_OUTSIDE = 2;
-  }
-  HierarchicalAction action = 3;
-  
-  // local position for entering or leaving to passenger, world position for leaving outside. 
-  Vector3F position = 10;
-}
-
-/*
  * Used to control the binding between two entities. 
- * It uses slots, if a player is alredy in another entity,
- * i will firstly break the relationship and then transform
- * the state from being a passenger to a slot user. 
+ * It uses slots, like seats in vehicles. 
  * For example, you can enter a spaceship(entering) and then
  * sit on the chair(taking a slot). 
  */
@@ -72,7 +50,9 @@ message ServerEntityBindingControlMessage {
   uint64 entityId = 1;
   uint64 targetEntityId = 2;
   
-  int32 slotId = 3;
+  int32 slotId = 3; // set to 0xFFFFFFFF to to leave the 
+  
+  Vector3F slotRelativePosition = 4;
 }
 
 /* ====== Client Messages ====== */
